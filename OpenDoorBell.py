@@ -277,8 +277,6 @@ class OpenDoorBell:
         root.putChild('stream.mjpeg', MJpegResource(queues))
         root.putChild('latest.jpeg', LatestImageResource(factory))
         root.putChild('ping', PingResource())
-        root.putChild('getConfig', GetConfigResource(self))
-        root.putChild('updateConfig', UpdateConfigResource(self))
 
         site = server.Site(root)
         PORT = 80
