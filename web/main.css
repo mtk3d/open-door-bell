@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+#imageContainer
+{
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+    overflow-y: hidden;
+}
+
+#status {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+#timestamp {
+    font-size: 1.5em;
+    padding: 2px;
+    width: 100%;
+    text-align: right;
+}
+
+#SPO2, #BPM {
+    font-size: 3em;
+    width: 5em;
+    text-align: right;
+}
+
+#SPO2 {
+    color: red;
+}
+
+#BPM {
+    color: #448844;
+}
+
+#alarmsContainer > div {
+    font-size: 2em;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+#config {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#latest, #latest_jpeg {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

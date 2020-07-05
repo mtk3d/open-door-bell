@@ -1,0 +1,13 @@
+[Unit]
+Description=OpenDoorBell
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python OpenDoorBell.py
+WorkingDirectory=/home/pi/code/open-door-bell/
+StandardOutput=inherit
+StandardError=inherit
+Restart=no
+
+[Install]
+WantedBy=multi-user.target
