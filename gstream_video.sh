@@ -21,7 +21,7 @@ fi
 
 gst-launch-1.0 -v \
     v4l2src device=${videosrc} \
-        ! video/x-raw,framerate=10/1, width=1280, height=720 \
+        ! video/x-raw,framerate=10/1, width=640, height=480 \
         ! clockoverlay valignment=bottom time-format="%H:%M" \
         ! jpegenc \
         ! tee name=t \
